@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* font-family: 'Overpass', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    display: block;
+}
+
+.card {
+    max-width: 300px;
+    padding: 20px;
+    background-color: hsl(215, 21%, 15%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card img {
+    width: 15px;
+}
+
+.card .image {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: hsl(216, 18%, 18%);
+}
+
+.card h3 {
+    color: white;
+    font-weight: 700;
+}
+
+.card p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.card .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .rating button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: hsl(216, 18%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.card .rating button:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.card .rating button:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+#result {
+    display: none;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 20px;
+    background-color: hsl(215, 21%, 15%);
+    gap: 1.45em;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.result img {
+    width: 40%;
+}
+
+.result .rating {
+    background-color: hsl(216, 18%, 18%);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.result .rating p {
+    color: hsl(25, 97%, 53%);
+}
+
+.result h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.result p {
+    color: hsl(217, 12%, 63%);
+    font-size: 12px;
+}
+
+.backgroundColor {
+    background-color: hsl(217, 12%, 63%);
+}
+
+@media only screen and (max-width: 345px) {
+    .card, .result {
+        margin: 1rem;
+    }
+}
